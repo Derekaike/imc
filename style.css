@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #040924;
+    font-size: 1.6rem;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.card{
+    padding: 4.8rem 6.4rem 6.4rem;
+    max-width: 45rem;
+    background-color: white;
+    margin-inline: auto;
+    border-radius: .6rem;
+}
+
+form h1 {
+    color: #0C3440;
+    margin-bottom: 1.6rem;
+}
+
+.input-wrapper {
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    width: 30rem;
+    height: 7.88rem;
+}
+
+.input-wrapper input {
+    background: #DCE2E9;
+    border: .1rem solid #02799D;
+    border-radius: .4rem;
+    width: 300px;
+    height: 52px;
+    border: none;
+    padding: 1.6rem;
+}
+
+form button {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #02799D;
+    border-radius: 4px;
+    margin-top: 3.2rem;
+    border: none;
+
+    width: 30rem;
+    height: 5.2rem;
+}
+
+.modal-wrapper.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-wrapper {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: grid;
+    place-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    position: relative;
+}
+
+.modal button {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+}
+
+.modal button:hover{
+    scale: 1.1;
+}
+
+.alert-box.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.alert-box {
+    color: white;
+    height: 2.5rem;
+    background-color: #F03E3E;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: .1rem 0rem;
+
+    visibility: hidden;
+    opacity: 0;
+}
